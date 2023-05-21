@@ -1,15 +1,15 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, Text, View, StatusBar } from 'react-native';
-import { SearchBar } from 'react-native-paper';
-import { RestaurantInfo } from '../components/restaurant-info.component';
+import { Searchbar } from 'react-native-paper';
+import { RestaurantInfoCard } from '../components/restaurant-info-card.component';
 
 export const RestaurantsScreen = () => {
   <SafeAreaView style={{ flex: 1, marginTop: StatusBar.currentHeight }}>
     <View style={styles.search}>
-      <SearchBar placeholder='Search' />
+      <Searchbar placeholder='Search' />
     </View>
     <View style={styles.list}>
-      <RestaurantInfo />
+      <RestaurantInfoCard />
     </View>
   </SafeAreaView>;
 };
@@ -17,7 +17,7 @@ export const RestaurantsScreen = () => {
 const styles = StyleSheet.create({
   search: {
     padding: 16,
-    backgroundColor: 'coral',
+    backgroundColor: 'papayawhip',
   },
   list: {
     padding: 16,
